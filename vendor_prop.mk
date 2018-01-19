@@ -306,6 +306,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.disable_skip_validate=1
 
+# Make data selection stick in dual SIM devices
+persist.radio.aosp_usr_pref_sel=true
+
 # Display Properties as per treble compliance
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
