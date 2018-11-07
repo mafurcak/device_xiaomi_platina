@@ -37,13 +37,12 @@ include $(LOCAL_PATH)/oem-permissions/permissions.mk
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
 
-# Shims 
+# Shims
 PRODUCT_PACKAGES += \
     camera.sdm660_shim
 
 # RRO
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=392
