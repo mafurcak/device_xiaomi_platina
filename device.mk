@@ -29,6 +29,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Properties
 include $(LOCAL_PATH)/vendor_prop.mk
 
+# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # OEM Permissions
 include $(LOCAL_PATH)/oem-permissions/permissions.mk
 
