@@ -31,7 +31,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
 
 #PRODUCT_ENFORCE_RRO_TARGETS := \
-#    framework-res
+    framework-res
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=403
