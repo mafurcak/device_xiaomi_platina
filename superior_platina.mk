@@ -25,10 +25,11 @@ $(call inherit-product, device/xiaomi/platina/device.mk)
 # Inherit from Miui Camera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Inherit some common AOSCP stuff.
-$(call inherit-product, vendor/aoscp/configs/common_full_phone.mk)
+# Inherit some common SuperiorOS stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/superior/config/common.mk)
 
-PRODUCT_NAME := aoscp_platina
+PRODUCT_NAME := superior_platina
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := platina
 PRODUCT_MANUFACTURER := Xiaomi
