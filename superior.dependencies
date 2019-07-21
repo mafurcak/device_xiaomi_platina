@@ -15,11 +15,5 @@
     "repository":  "mafurcak/vendor_MiuiCamera",
     "target_path": "vendor/MiuiCamera",
     "branch":      "pie-platina"
-  },
-  {
-    "remote":      "github",
-    "repository":  "LineageOS/android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
-    "branch":      "lineage-16.0"
   }
 ]
