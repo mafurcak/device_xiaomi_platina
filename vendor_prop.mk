@@ -293,14 +293,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Expose aux camera for below packages
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi
 
 # Disable UBWC for camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
     persist.camera.hist.high=20 \
     persist.camera.hist.drc=1.2 \
-    persist.camera.stats.test=5
+    persist.camera.stats.test=0
+
+# Miui Cam setting
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.depth.focus.cb=0 \
+    persist.camera.isp.clock.optmz=0 \
+    persist.camera.linkpreview=0 \
+    persist.camera.isp.turbo=1 \
+    persist.camera.set.afd=4 \
+    persist.bokeh.switch.lux=290 \
+    persist.camera.auxswitch.threshold=330 \
+    persist.camera.mainswitch.threshold=419
 
 # Set maximum supported adapter voltage
 PRODUCT_PROPERTY_OVERRIDES += \
