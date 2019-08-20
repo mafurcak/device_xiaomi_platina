@@ -37,7 +37,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     framework-res
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=403
+    ro.sf.lcd_density=392
 
 # ARStickersMod for GoogleCamera and GoogleMaps
 PRODUCT_PACKAGES += \
