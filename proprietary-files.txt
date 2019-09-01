@@ -2066,6 +2066,9 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
+# VNDK
+vendor/lib/vndk/libbinder.so|094d702305c39f3988b9f586d47d4e8b10595ceb
+
 # ESE-Powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
 vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
