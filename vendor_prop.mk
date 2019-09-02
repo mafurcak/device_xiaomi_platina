@@ -379,7 +379,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.redir_party_num=1 \
     ro.treble.enabled=true \
     keyguard.no_require_sim=true \
-    persist.radio.apm_sim_not_pwdn=1
+    persist.radio.apm_sim_not_pwdn=1 \
+    vnswap.enabled=true \
+    ro.config.zram=true \
+    ro.config.zram.support=true
 
 #Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
