@@ -23,14 +23,11 @@ $(call inherit-product-if-exists, vendor/xiaomi/Gcam/config.mk)
 # Inherit from platina device
 $(call inherit-product, device/xiaomi/platina/device.mk)
 
-# Inherit from Miui Camera
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
-# Inherit some common SuperiorOS stuff.
+# Inherit some common Syberia stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/syberia/common.mk)
 
-PRODUCT_NAME := superior_platina
+PRODUCT_NAME := syberia_platina
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := platina
 PRODUCT_MANUFACTURER := Xiaomi
