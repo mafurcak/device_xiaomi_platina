@@ -414,6 +414,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.sensors.sh
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcamera_sdm660_shim
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext \
