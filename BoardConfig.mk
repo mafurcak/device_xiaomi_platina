@@ -219,6 +219,8 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
     /vendor/bt_firmware:/bt_firmware
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_ROOT_EXTRA_FOLDERS := persist
+
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
