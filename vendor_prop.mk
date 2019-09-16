@@ -307,7 +307,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # System prop for Bluetooth SOC type
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.bluetooth.soc=cherokee
+    vendor.bluetooth.soc=cherokee \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true
 
 # Property for backup NTP Server
 PRODUCT_PROPERTY_OVERRIDES += \

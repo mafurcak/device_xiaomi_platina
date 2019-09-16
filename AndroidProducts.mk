@@ -14,3 +14,8 @@
 # limitations under the License.
  PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_platina.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_platina-userdebug \
+    aosp_platina-user \
+    aosp_platina-eng 

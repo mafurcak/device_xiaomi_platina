@@ -204,9 +204,9 @@ PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
     android.hardware.broadcastradio@1.0-impl
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    device/xiaomi/platina
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -445,7 +445,17 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # VNDK
-PRODUCT_PACKAGES += vndk_package
+PRODUCT_BOARD_PLATFORM := msm8998
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+PRODUCT_PACKAGES += \
+    vndk_package \
+    libstdc++.vendor
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v27/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0-v27.so \
+    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice@1.0-v27.so
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -476,5 +486,5 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     WfdCommon
