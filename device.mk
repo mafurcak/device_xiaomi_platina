@@ -451,6 +451,7 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 PRODUCT_PACKAGES += \
     vndk_package \
+    vndk-sp \
     libstdc++.vendor
 
 PRODUCT_COPY_FILES += \
