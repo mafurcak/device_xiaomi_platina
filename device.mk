@@ -431,8 +431,8 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     qti-telephony-common
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
