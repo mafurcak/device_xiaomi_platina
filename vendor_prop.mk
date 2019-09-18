@@ -312,6 +312,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.auxswitch.threshold=330 \
     persist.camera.mainswitch.threshold=419
 
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.protected_contents=true
+
 # Set maximum supported adapter voltage
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.chg.max_volt_mv=9000
