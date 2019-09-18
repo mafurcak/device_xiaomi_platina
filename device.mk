@@ -33,6 +33,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # OEM Permissions
 include $(LOCAL_PATH)/oem-permissions/permissions.mk
 
+# Set boot SPL
+BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
