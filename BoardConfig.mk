@@ -216,7 +216,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
     /vendor/bt_firmware:/bt_firmware
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_USES_MKE2FS := true
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
@@ -258,7 +257,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Use mke2fs to create ext4 images
-TARGET_USES_MKE2FS := true
+#TARGET_USES_MKE2FS := true
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_platina
