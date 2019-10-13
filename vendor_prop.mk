@@ -282,8 +282,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pickup=true
 
 # HAL1 apps list
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.hal1.packagelist=org.codeaurora.snapcam
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    vendor.camera.hal1.packagelist=org.codeaurora.snapcam
 
 # Enable HAL3
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -292,14 +292,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Expose aux camera for below packages
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+    camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
 
 # Disable UBWC for camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
     persist.camera.hist.high=20 \
     persist.camera.hist.drc=1.2 \
-    persist.camera.stats.test=5
+    persist.camera.stats.test=0 \
+    persist.vendor.camera.depth.focus.cb=0 \
+    persist.vendor.camera.isp.clock.optmz=0 \
+    persist.vendor.camera.linkpreview=0 \
+    persist.vendor.camera.isp.turbo=1
 
 # Set maximum supported adapter voltage
 PRODUCT_PROPERTY_OVERRIDES += \
