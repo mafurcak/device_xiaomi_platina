@@ -20,3 +20,6 @@
 /dev/block/bootdevice/by-name/cache      /cache             f2fs   nosuid,nodev,noatime,barrier=1                           wait
 /dev/block/bootdevice/by-name/persist    /mnt/vendor/persist    ext4   noatime,nosuid,nodev,barrier=1                   wait
 /dev/block/zram0                         none               swap   defaults                                         zramsize=2147483648‬,max_comp_streams=8
+/dev/block/bootdevice/by-name/system     /                  ext4    ro,barrier=1                                    wait
+/dev/block/bootdevice/by-name/vendor     /vendor            ext4    ro,barrier=1                                    wait,recoveryonly
+/dev/block/bootdevice/by-name/boot       /boot              emmc    defaults                                        defaults
